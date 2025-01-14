@@ -1,5 +1,6 @@
 package fr.tyrolium.maxime.atelierstage.util.handlers;
 
+import fr.tyrolium.maxime.atelierstage.init.BlocksMod;
 import fr.tyrolium.maxime.atelierstage.init.ItemsMod;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -16,10 +17,10 @@ public class RegistryHandler {
         event.getRegistry().registerAll(ItemsMod.ITEMS.toArray(new Item[0]));
     }
 
-//    @SubscribeEvent
-//    public static void registerBlokcs(RegistryEvent.Register<Block> event){
-//        event.getRegistry().registerAll(/* mettre nos blocks */);
-//    }
+    @SubscribeEvent
+    public static void registerBlokcs(RegistryEvent.Register<Block> event){
+        event.getRegistry().registerAll(BlocksMod.BLOCKS.toArray(new Block[0]));
+    }
 
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event){
@@ -30,11 +31,11 @@ public class RegistryHandler {
             }
         }
 
-//        for(Block block : /* nos block */){
-//            if (block instanceof IHasModel){
-//                ((IHasModel)block).registerModels();
-//            }
-//        }
+        for(Block block : BlocksMod.BLOCKS){
+            if (block instanceof IHasModel){
+                ((IHasModel)block).registerModels();
+            }
+        }
 
     }
 

@@ -8,3 +8,5 @@ item.tyrolium_helmet.name=Casque en Tyrolium
 item.tyrolium_chestplate.name=Plastron en Tyrolium
 item.tyrolium_leggings.name=Chambière en Tyrolium
 item.tyrolium_boots.name=Bottes en Tyrolium
+
+tile.tyrolium_block.name=Bloc de Tyrolium

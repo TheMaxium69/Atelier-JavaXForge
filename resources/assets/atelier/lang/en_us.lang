@@ -8,3 +8,5 @@ item.tyrolium_helmet.name=Tyrolium Helmet
 item.tyrolium_chestplate.name=Tyrolium Chestplate
 item.tyrolium_leggings.name=Tyrolium Leggings
 item.tyrolium_boots.name=Tyrolium Boots
+
+tile.tyrolium_block.name=Tyrolium Block
