@@ -21,7 +21,6 @@ public class Main {
 
     private static Logger logger;
 
-
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
